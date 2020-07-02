@@ -1,0 +1,31 @@
+function flag = validation(potential_answer,existing_num,44matrix)
+% existing_num = [ 0 0 2 0 0;
+%     0 0 0 0 0;
+%     0 4 0 0 0;
+%     0 0 0 0 0;
+%     0 0 0 2 0;]
+% potential_answer = [ 1 3 2 4 5;
+%     3 5 1 4 2;
+%     2 4 3 3 1;
+%     5 2 4 1 3;
+%     4 1 3 2 5;]
+% potential_answer = [ 4 4 2 2 ;
+%                      4 2 3 4;
+%                      2 4 3 3 1;
+%     5 2 4 1 3;
+%     4 1 3 2 5;]
+
+
+
+
+% step 1：与pre_condition得吻合；
+flag_Existing = validation_checkExistingNum( potential_answer, existing_num )
+
+% step 2：行列都是唯一，且出现次数唯一
+flag_selfcheck = validation_selfCheck(potential_answer)
+
+% step 3：行列都是唯一，且出现次数唯一
+
+
+
+

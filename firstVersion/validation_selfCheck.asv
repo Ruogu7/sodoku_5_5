@@ -1,0 +1,27 @@
+function flag = validation_selfCheck(potential_answer)
+
+% 
+
+
+% 行列都是唯一，且出现次数唯一
+%% 行检测
+row_flag = 1;
+kk = potential_answer(1,:)
+kk_1 = ismember(1,kk);
+for ii_row = 1:5
+    kk = potential_answer(ii_row,:)
+    for ii_row_num = 1:5
+        ii_row_flag = ismember(1,kk);
+        row_flag = ii_row_num * row_flag
+        if ~row_flag % 等于 0
+            ii_row % 第几行
+            ii_row_num % 哪个数字缺失
+            
+        end
+    end
+     
+end
+
+
+
+
